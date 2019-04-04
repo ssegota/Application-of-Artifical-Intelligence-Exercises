@@ -13,7 +13,8 @@ from sklearn.neural_network import MLPRegressor
 
 x = np.arange(-10,10,0.1)
 y = x**2
-
+#TODO 
+#FIXME 
 plt.figure()
 plt.plot(x,y, label = "f(x)=$x^2$")
 plt.grid(True)
@@ -39,12 +40,12 @@ X = np.reshape(x, [n,1])
 y = np.reshape(y, [n, ])
 
 clf1 = MLPRegressor(alpha = 0.01,
-                   hidden_layer_sizes = (100,),\
-                   max_iter=20000, \
+                   hidden_layer_sizes = (100),\
+                   max_iter=50000, \
                    activation = "logistic",\
                    verbose = True,\
                    learning_rate = "adaptive",\
-                   tol = 0.000001)
+                   tol = 0.0000001)
 
 a = clf1.fit(X, y)
 
@@ -63,6 +64,11 @@ plt.ylabel("f(x)")
 plt.legend()
 plt.show()
 
+sum=0
+
+from sklearn.metrics import mean_squared_error
+
+print("MSE:", mean_squared_error(x_**2, pred_y))
 clf1.coefs_  #Težinske vrijednosti
 clf1.intercepts_ #Biasi
 clf1.n_iter_ #Broj iteracija
