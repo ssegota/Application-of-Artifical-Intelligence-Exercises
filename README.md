@@ -5,3 +5,5 @@
 * *Exercise 3:* MLP Classificator using SKLearn
 * *Exercise 4:* SVM Classificator using SKLearn
 * *Exercise 5:* Basic Genetic Algorithm
+* *Exercise 6:* Equation Solving using a Genetic Algorithm
+* *Exercise 7:* Genetic Programming
