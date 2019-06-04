@@ -7,3 +7,4 @@
 * *Exercise 5:* Basic Genetic Algorithm
 * *Exercise 6:* Equation Solving using a Genetic Algorithm
 * *Exercise 7:* Genetic Programming
+* *Exercise 8:* Fuzzy logic
